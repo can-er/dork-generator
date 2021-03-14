@@ -28,9 +28,9 @@ class InteractiveMode(cmd.Cmd):
 	table = Table()
 	prompt = "dork@generator~> "
 	intro = "Simple dork generator."
-	doc_header = 'doc_header'
-	misc_header = 'misc_header'
-	undoc_header = 'undoc_header'
+	doc_header = 'Help'
+	misc_header = 'BEGIN help'
+	undoc_header = 'END help'
 
 	ruler = '-'
 

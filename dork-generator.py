@@ -5,7 +5,17 @@ from prettytable import PrettyTable
 class Table(object):
 	def __init__(self):
 		self.table = PrettyTable()
-		self.table.field_names = ["Title", "URL", "Site", "Text content", "Extension", "Type of file:", "Exact match of title", "Exact match of URL", "Excluded terms", "Information"]
+		self.table.field_names = ["Title", 
+					  "URL", 
+					  "Site", 
+					  "Text content", 
+					  "Extension", 
+					  "Type of file:", 
+					  "Exact match of title", 
+					  "Exact match of URL", 
+					  "Excluded terms", 
+					  "Information"]
+		
 		self.rows = [ "" for fields in self.table.field_names]
 		self.table.add_row(self.rows)
 		# self.related = []
